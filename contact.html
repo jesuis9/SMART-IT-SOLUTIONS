@@ -3,18 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact - Smart IT </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css".site-header {
+  background: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="services.html">Services</a>
-  <a href="tarifs.html">Tarifs</a>
-  <a href="apropos.html">À propos</a>
-  <a href="contact.html">Contact</a>
-</nav>
+ <header class="site-header">
+  <h1>SMART IT</h1>
+  <p>Solutions informatiques & formations</p>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
 <div class="container">
 <h1>Contactez-nous</h1>
@@ -48,6 +78,27 @@ Lundi – Samedi : 08h00 – 18h00
 </p>
 
 </div>
+  <footer class="site-footer">
+  <p>© 2026 SMART IT – Tous droits réservés</p>
+</footer>
+  <a href="https://wa.me/237675837710"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer">
+  💬
+</a>
+  .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
 </body>
 </html>
