@@ -23,6 +23,20 @@ body {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+
+  @media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+  }
+}
   font-weight: bold;
 }
 
