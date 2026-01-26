@@ -102,6 +102,10 @@ a:hover {
     padding: 10px;
   }
 
+  body {
+  font-family: 'Poppins', sans-serif;
+}
+
   .container {
     padding: 15px;
   }
