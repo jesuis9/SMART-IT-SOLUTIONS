@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jesuis9.github.io/SMART-IT-SOLUTIONS/sitemap.xml
