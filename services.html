@@ -7,8 +7,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Dépannage informatique, maintenance, installation et formation informatique au Cameroun. Services professionnels pour particuliers et entreprises.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <h1>Nos Services</h1>
+ <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
+    header {
+      background: linear-gradient(135deg, #0a58ca, #083a8c);
+      color: white;
+      padding: 20px 40px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo { font-size: 22px; font-weight: 600; }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .page-title {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .page-title h1 {
+      color: #0a58ca;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .page-title p { color: #4b5563; }
+
+    .services {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .service {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .service p { color: #6b7280; font-size: 15px; }
+
+    footer {
+      background: #0a58ca;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+
+
+ 
+  <h1>Nos Services</h1>
 <div class="services-buttons">
   <a href="#maintenance" class="service-btn">Maintenance informatique</a>
   <a href="#depannage" class="service-btn">Dépannage laptop</a>
