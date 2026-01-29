@@ -119,6 +119,33 @@ document.getElementById("formationForm").addEventListener("submit", function(e) 
   var numero = "237675837710"; // remplace par ton numéro
   window.open("https://wa.me/" + numero + "?text=" + texte, "_blank");
 });
+    <section>
+  <h2>Formulaire d’inscription à la formation</h2>
+
+  <form id="formationForm">
+    <label>Nom et prénom</label>
+    <input type="text" id="nom" required>
+
+    <label>Numéro de téléphone</label>
+    <input type="tel" id="telephone" required>
+
+    <label>Niveau</label>
+    <select id="niveau" required>
+      <option value="">-- Choisir --</option>
+      <option value="Débutant">Débutant</option>
+      <option value="Intermédiaire">Intermédiaire</option>
+      <option value="Avancé">Avancé</option>
+    </select>
+
+    <label>Message</label>
+    <textarea id="message" rows="4"></textarea>
+
+    <button type="submit" class="service-btn">
+      Envoyer la demande
+    </button>
+  </form>
+</section>
+
 </script>
 
 
