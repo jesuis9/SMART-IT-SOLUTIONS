@@ -100,6 +100,27 @@
 <footer>
   <p>© Smart IT Solutions — Formation & Maintenance informatique</p>
 </footer>
+  <script>
+document.getElementById("formationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  var nom = document.getElementById("nom").value;
+  var telephone = document.getElementById("telephone").value;
+  var niveau = document.getElementById("niveau").value;
+  var message = document.getElementById("message").value;
+
+  var texte =
+    "Inscription Formation Maintenance Informatique%0A" +
+    "Nom : " + nom + "%0A" +
+    "Téléphone : " + telephone + "%0A" +
+    "Niveau : " + niveau + "%0A" +
+    "Message : " + message;
+
+  var numero = "237675837710"; // remplace par ton numéro
+  window.open("https://wa.me/" + numero + "?text=" + texte, "_blank");
+});
+</script>
+
 
 </body>
 </html>
