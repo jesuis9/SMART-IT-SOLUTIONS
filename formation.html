@@ -2,152 +2,176 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Formation en maintenance informatique | Smart IT Solutions</title>
+  <title>Formations - Smart IT Solutions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Formation professionnelle en maintenance informatique, réparation PC et laptops, électronique et cartes mères.">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styles spécifiques à la page formation */
+    .formation-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .formation-card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .formation-card h3 {
+      margin-top: 0;
+      color: #0a58ca;
+    }
+    .formation-card ul {
+      padding-left: 18px;
+    }
+    .formation-card button {
+      margin-top: 10px;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 5px;
+      background: #0a3d62;
+      color: white;
+      cursor: pointer;
+    }
+    .formation-card button:hover {
+      background: #0a58ca;
+    }
+
+    /* Formulaire */
+    .form-section {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .btn-submit {
+      background: #0a3d62;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background: #0a58ca;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Formation en maintenance informatique</h1>
-  <p>Apprenez un métier pratique et recherché</p>
+<header class="site-header">
+  <h1>Smart IT - Formations</h1>
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="formation.html" class="active">Formations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <div class="container">
+  <h2>Nos programmes de formation</h2>
+  <p>Nous proposons des formations professionnelles en informatique, maintenance et électronique pour débutants et techniciens.</p>
 
-  <section>
-    <h2>Présentation de la formation</h2>
-    <p>
-      Smart IT Solutions propose une <strong>formation professionnelle en maintenance informatique</strong>
-      destinée à toute personne souhaitant acquérir des compétences solides dans le diagnostic,
-      la réparation et la maintenance des ordinateurs et laptops.
-    </p>
-    <p>
-      La formation est orientée <strong>pratique atelier</strong>, avec une approche
-      <strong>académique et méthodologique</strong>, adaptée aux réalités du terrain.
-    </p>
-  </section>
+  <div class="formation-list">
+    <div class="formation-card">
+      <h3>Maintenance Informatique et reseaux</h3>
+      <ul>
+        <li>Dépannage PC, Imprimantes et laptop</li>
+        <li>Installation Windows / Odoo / Linux</li>
+        <li>Diagnostic matériel</li>
+      </ul>
+      <button onclick="document.getElementById('formation').value='Maintenance Informatique'">S’inscrire</button>
+    </div>
 
-  <section>
-    <h2>Objectifs pédagogiques</h2>
-    <ul>
-      <li>Comprendre le fonctionnement interne d’un ordinateur</li>
-      <li>Diagnostiquer les pannes matérielles et logicielles</li>
-      <li>Réparer PC et laptops</li>
-      <li>Intervenir sur les cartes mères (niveau électronique)</li>
-      <li>Travailler de manière autonome et professionnelle</li>
-    </ul>
-  </section>
+    <div class="formation-card">
+      <h3>Électronique & Carte Mère</h3>
+      <ul>
+        <li>Schémas électroniques</li>
+        <li>Alimentation et BIOS</li>
+        <li>Réparation niveau composant</li>
+      </ul>
+      <button onclick="document.getElementById('formation').value='Electronique & Carte Mere'">S’inscrire</button>
+    </div>
 
-  <section>
-    <h2>Programme de formation</h2>
-    <ul>
-      <li>Bases de l’électronique informatique</li>
-      <li>Alimentation et circuits de puissance</li>
-      <li>Maintenance PC & laptops</li>
-      <li>Dépannage matériel et logiciel</li>
-      <li>BIOS, séquence de démarrage et firmware</li>
-      <li>Réparation de cartes mères (niveau avancé)</li>
-      <li>Méthodes de diagnostic professionnel</li>
-    </ul>
-  </section>
+    <div class="formation-card">
+      <h3>Création de Sites Web</h3>
+      <ul>
+        <li>HTML / CSS / GitHub Pages</li>
+        <li>Site professionnel multi-pages</li>
+        <li>Publication et maintenance</li>
+      </ul>
+      <button onclick="document.getElementById('formation').value='Creation de Sites Web'">S’inscrire</button>
+    </div>
+  </div>
 
-  <section>
-    <h2>Méthode pédagogique</h2>
-    <p>
-      La formation combine :
-    </p>
-    <ul>
-      <li>Cours théoriques structurés</li>
-      <li>Travaux pratiques sur machines réelles</li>
-      <li>Études de cas concrets</li>
-      <li>Encadrement et suivi personnalisé</li>
-    </ul>
-  </section>
+  <!-- Formulaire d'inscription -->
+  <div class="form-section">
+    <h2>Formulaire d’inscription</h2>
+    <form action="https://formspree.io/f/xaqjdrqr" method="POST">
+      <div class="form-group">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
 
-  <section>
-    <h2>Public concerné</h2>
-    <ul>
-      <li>Débutants motivés</li>
-      <li>Étudiants en informatique ou électronique</li>
-      <li>Techniciens en activité</li>
-      <li>Personnes en reconversion professionnelle</li>
-    </ul>
-  </section>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-  <section>
-    <h2>Certification</h2>
-    <p>
-      À la fin de la formation, une <strong>attestation de formation professionnelle</strong>
-      est délivrée selon le niveau suivi.
-    </p>
-  </section>
+      <div class="form-group">
+        <label for="telephone">Téléphone / WhatsApp</label>
+        <input type="text" id="telephone" name="telephone" required>
+      </div>
 
-  <section>
-    <h2>Inscriptions & informations</h2>
-    <p>
-      Pour connaître la durée, les modalités et les prochaines sessions :
-    </p>
+      <div class="form-group">
+        <label for="formation">Formation choisie</label>
+        <select id="formation" name="formation" required>
+          <option value="">-- Choisir une formation --</option>
+          <option>Maintenance Informatique</option>
+          <option>Electronique & Carte Mere</option>
+          <option>Creation de Sites Web</option>
+        </select>
+      </div>
 
-    <a href="https://wa.me/237675837710" target="_blank" class="service-btn">
-      Contacter pour s’inscrire à la formation
-    </a>
-  </section>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre objectif, niveau, questions..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Envoyer l’inscription</button>
+    </form>
+  </div>
 
 </div>
 
-<footer>
-  <p>© Smart IT Solutions — Formation & Maintenance informatique</p>
+<footer class="site-footer">
+  <p>© 2026 Smart IT Solutions - Formations professionnelles en informatique</p>
 </footer>
-  <script>
-document.getElementById("formationForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  var nom = document.getElementById("nom").value;
-  var telephone = document.getElementById("telephone").value;
-  var niveau = document.getElementById("niveau").value;
-  var message = document.getElementById("message").value;
-
-  var texte =
-    "Inscription Formation Maintenance Informatique%0A" +
-    "Nom : " + nom + "%0A" +
-    "Téléphone : " + telephone + "%0A" +
-    "Niveau : " + niveau + "%0A" +
-    "Message : " + message;
-
-  var numero = "237675837710"; // remplace par ton numéro
-  window.open("https://wa.me/" + numero + "?text=" + texte, "_blank");
-});
-    <section>
-  <h2>Formulaire d’inscription à la formation</h2>
-
-  <form id="formationForm">
-    <label>Nom et prénom</label>
-    <input type="text" id="nom" required>
-
-    <label>Numéro de téléphone</label>
-    <input type="tel" id="telephone" required>
-
-    <label>Niveau</label>
-    <select id="niveau" required>
-      <option value="">-- Choisir --</option>
-      <option value="Débutant">Débutant</option>
-      <option value="Intermédiaire">Intermédiaire</option>
-      <option value="Avancé">Avancé</option>
-    </select>
-
-    <label>Message</label>
-    <textarea id="message" rows="4"></textarea>
-
-    <button type="submit" class="service-btn">
-      Envoyer la demande
-    </button>
-  </form>
-</section>
-
-</script>
-
 
 </body>
 </html>
