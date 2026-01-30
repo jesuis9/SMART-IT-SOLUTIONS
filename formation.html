@@ -132,7 +132,8 @@
   <!-- Formulaire d'inscription -->
   <div class="form-section">
     <h2>Formulaire d’inscription</h2>
-    <form action="https://formspree.io/f/xaqjdrqr" method="POST">
+   <form action="https://formspree.io/f/xaqjdrqr" method="POST" onsubmit="sendWhatsApp()">
+
       <div class="form-group">
         <label for="nom">Nom complet</label>
         <input type="text" id="nom" name="nom" required>
@@ -172,6 +173,31 @@
 <footer class="site-footer">
   <p>© 2026 Smart IT Solutions - Formations professionnelles en informatique</p>
 </footer>
+  <script>
+function sendWhatsApp() {
+  const nom = document.getElementById("nom").value;
+  const email = document.getElementById("email").value;
+  const tel = document.getElementById("telephone").value;
+  const formation = document.getElementById("formation").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappNumber = "237675837710"; // ← TON numéro WhatsApp (sans + ni espaces)
+
+  const text =
+    "📌 *Nouvelle inscription Smart IT*%0A%0A" +
+    "👤 Nom : " + nom + "%0A" +
+    "📧 Email : " + email + "%0A" +
+    "📞 Téléphone : " + tel + "%0A" +
+    "🎓 Formation : " + formation + "%0A%0A" +
+    "💬 Message : " + message;
+
+  window.open(
+    "https://wa.me/" + whatsappNumber + "?text=" + text,
+    "_blank"
+  );
+}
+</script>
+
 
 </body>
 </html>
