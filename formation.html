@@ -6,7 +6,7 @@
 <title>Formation SMART IT</title>
 <link rel="stylesheet" href="style.css">
 <style>
-/* Styles pour la page Formation */
+/* Styles supplémentaires pour la page Formation */
 .module {
     margin: 30px auto;
     max-width: 900px;
@@ -15,13 +15,35 @@
     border-radius: 10px;
     background: #f5f5f5;
 }
-.module h2 { color: #4b0082; }
-.module ul { list-style: disc; margin-left: 20px; }
-nav.module-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-bottom: 20px; }
-nav.module-nav a {
-    padding: 10px 20px; background: #4b0082; color: white; text-decoration: none; border-radius: 8px;
+
+.module h2 {
+    color: #4b0082;
 }
-nav.module-nav a:hover { background: #6a0dad; }
+
+.module ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+nav.module-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav.module-nav a {
+    padding: 10px 20px;
+    background: #4b0082;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav.module-nav a:hover {
+    background: #6a0dad;
+}
 </style>
 </head>
 <body>
@@ -36,44 +58,58 @@ nav.module-nav a:hover { background: #6a0dad; }
 </header>
 
 <main>
+
 <!-- Navigation rapide -->
 <nav class="module-nav">
     <a href="#maintenance">Maintenance Informatique</a>
     <a href="#froid">Froid et Climatisation</a>
     <a href="#video">Vidéo Surveillance</a>
+    <a href="#odoo">Développement Web : Odoo</a>
 </nav>
 
-<!-- Module 1 -->
+<!-- Module 1 : Maintenance Informatique -->
 <section id="maintenance" class="module">
     <h2>Maintenance Informatique</h2>
     <ul>
-        <li><strong>Introduction :</strong> Concepts de base, pannes, sécurité.</li>
-        <li><strong>Matériel :</strong> Composants, diagnostic, entretien.</li>
-        <li><strong>Périphériques :</strong> Imprimantes, scanners, pilotes.</li>
-        <li><strong>Logiciels :</strong> OS, antivirus, optimisation.</li>
-        <li><strong>Réseaux :</strong> LAN/Wi-Fi, configuration, dépannage.</li>
+        <li><strong>Introduction :</strong> Concepts de base, typologie des pannes, normes et sécurité.</li>
+        <li><strong>Maintenance du matériel :</strong> Composants internes, diagnostic, entretien préventif.</li>
+        <li><strong>Maintenance des périphériques :</strong> Imprimantes, scanners, gestion des pilotes.</li>
+        <li><strong>Maintenance logicielle :</strong> Installation et mise à jour des OS, optimisation et antivirus.</li>
+        <li><strong>Réseaux et connectivité :</strong> LAN/Wi-Fi, configuration des routeurs, dépannage des problèmes de connexion.</li>
     </ul>
 </section>
 
-<!-- Module 2 -->
+<!-- Module 2 : Froid et Climatisation -->
 <section id="froid" class="module">
     <h2>Froid et Climatisation</h2>
     <ul>
-        <li><strong>Introduction :</strong> Principes, types de climatiseurs.</li>
-        <li><strong>Installation :</strong> Positionnement, raccordements.</li>
-        <li><strong>Maintenance :</strong> Nettoyage, détection fuites, contrôle performance.</li>
-        <li><strong>Sécurité :</strong> Normes électriques et environnementales.</li>
+        <li><strong>Introduction :</strong> Principes de base, types de climatiseurs et réfrigérateurs.</li>
+        <li><strong>Installation et câblage :</strong> Positionnement des unités, raccordements électriques et fluides frigorigènes.</li>
+        <li><strong>Maintenance et dépannage :</strong> Nettoyage des filtres, détection des fuites, contrôle de la pression et performances.</li>
+        <li><strong>Sécurité et réglementation :</strong> Normes électriques et environnementales, utilisation sécurisée des outils.</li>
     </ul>
 </section>
 
-<!-- Module 3 -->
+<!-- Module 3 : Vidéo Surveillance -->
 <section id="video" class="module">
     <h2>Vidéo Surveillance</h2>
     <ul>
-        <li><strong>Introduction :</strong> Caméras analogiques/IP, composants.</li>
-        <li><strong>Installation :</strong> Positionnement, câblage, stockage.</li>
-        <li><strong>Configuration :</strong> DVR/NVR, accès à distance, alertes.</li>
-        <li><strong>Maintenance :</strong> Nettoyage caméras, diagnostic réseau.</li>
+        <li><strong>Introduction :</strong> Caméras analogiques vs IP, composants : caméras, DVR/NVR, câblage.</li>
+        <li><strong>Installation de base :</strong> Positionnement des caméras, raccordement et alimentation, configuration du stockage.</li>
+        <li><strong>Configuration logicielle :</strong> Paramétrage DVR/NVR, accès à distance via PC et smartphone, gestion des alertes.</li>
+        <li><strong>Maintenance et dépannage :</strong> Nettoyage des caméras, vérification des câbles, diagnostic réseau et matériel.</li>
+    </ul>
+</section>
+
+<!-- Module 4 : Développement Web : Odoo -->
+<section id="odoo" class="module">
+    <h2>Développement Web : Odoo</h2>
+    <ul>
+        <li><strong>Introduction à Odoo :</strong> Présentation de la plateforme ERP et de ses fonctionnalités principales.</li>
+        <li><strong>Développement de modules :</strong> Architecture d’un module, création de modèles et vues.</li>
+        <li><strong>Personnalisation :</strong> Personnalisation des formulaires, menus et workflows.</li>
+        <li><strong>Automatisation :</strong> Scripts Python, actions serveur et automatisation des tâches.</li>
+        <li><strong>Déploiement et maintenance :</strong> Installation sur serveur, mise à jour et sauvegarde.</li>
     </ul>
 </section>
 
@@ -83,24 +119,31 @@ nav.module-nav a:hover { background: #6a0dad; }
     <form action="https://formspree.io/f/tonformid" method="POST">
         <label for="name">Nom complet :</label>
         <input type="text" id="name" name="name" required>
+
         <label for="email">Email :</label>
         <input type="email" id="email" name="email" required>
+
         <label for="phone">Téléphone :</label>
         <input type="tel" id="phone" name="phone" required>
+
         <label for="course">Choix du module :</label>
         <select id="course" name="course">
           <option value="maintenance">Maintenance Informatique</option>
           <option value="froid">Froid et Climatisation</option>
           <option value="video">Vidéo Surveillance</option>
+          <option value="odoo">Développement Web : Odoo</option>
         </select>
+
         <button type="submit">S’inscrire</button>
     </form>
+
     <div style="text-align:center; margin-top:20px;">
         <a href="https://wa.me/237675837710?text=Je%20veux%20m'inscrire%20à%20une%20formation" target="_blank">
             <button>Contact WhatsApp</button>
         </a>
     </div>
 </section>
+
 </main>
 
 <footer>
