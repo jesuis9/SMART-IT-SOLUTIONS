@@ -1,25 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formation SMART IT</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation SMART IT</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Styles supplémentaires pour la page Formation */
+.module {
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.module h2 {
+    color: #4b0082;
+}
+
+.module ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+nav.module-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav.module-nav a {
+    padding: 10px 20px;
+    background: #4b0082;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+nav.module-nav a:hover {
+    background: #6a0dad;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Inscription à la Formation</h1>
+<header>
+    <h1>Inscription et Modules de Formation</h1>
     <nav>
       <a href="index.html">Accueil</a>
       <a href="services.html">Services</a>
       <a href="formation.html">Formation</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <section id="formulaire">
-      <form action="https://formspree.io/f/tonformid" method="POST">
+<main>
+
+<!-- Navigation rapide vers chaque module -->
+<nav class="module-nav">
+    <a href="#maintenance">Maintenance Informatique</a>
+    <a href="#froid">Froid et Climatisation</a>
+    <a href="#video">Vidéo Surveillance</a>
+</nav>
+
+<!-- Module 1 : Maintenance Informatique -->
+<section id="maintenance" class="module">
+    <h2>Maintenance Informatique</h2>
+    <ul>
+        <li><strong>Introduction à la maintenance informatique :</strong> Concepts de base, typologie des pannes, normes et sécurité.</li>
+        <li><strong>Maintenance du matériel :</strong> Composants internes, diagnostic, entretien préventif.</li>
+        <li><strong>Maintenance des périphériques :</strong> Imprimantes, scanners, gestion des pilotes.</li>
+        <li><strong>Maintenance logicielle :</strong> Installation et mise à jour des OS, optimisation, antivirus.</li>
+        <li><strong>Réseaux et connectivité :</strong> LAN/Wi-Fi, configuration routeurs, dépannage connexion.</li>
+    </ul>
+</section>
+
+<!-- Module 2 : Froid et Climatisation -->
+<section id="froid" class="module">
+    <h2>Froid et Climatisation</h2>
+    <ul>
+        <li><strong>Introduction aux systèmes frigorifiques :</strong> Principes de base, types de climatiseurs et réfrigérateurs.</li>
+        <li><strong>Installation et câblage :</strong> Positionnement des unités, raccordements électriques et fluides.</li>
+        <li><strong>Maintenance et dépannage :</strong> Nettoyage filtres, détection fuites, contrôle des performances.</li>
+        <li><strong>Sécurité et réglementation :</strong> Normes électriques, environnementales et sécurité des outils.</li>
+    </ul>
+</section>
+
+<!-- Module 3 : Vidéo Surveillance -->
+<section id="video" class="module">
+    <h2>Vidéo Surveillance</h2>
+    <ul>
+        <li><strong>Introduction aux systèmes de surveillance :</strong> Caméras analogiques vs IP, composants.</li>
+        <li><strong>Installation de base :</strong> Positionnement caméras, câblage, alimentation, stockage.</li>
+        <li><strong>Configuration logicielle :</strong> Paramétrage DVR/NVR, accès à distance, alertes et notifications.</li>
+        <li><strong>Maintenance et dépannage :</strong> Nettoyage caméras, vérification câbles, diagnostic réseau.</li>
+    </ul>
+</section>
+
+<!-- Formulaire d'inscription -->
+<section id="formulaire" class="module">
+    <h2>Inscription à la Formation</h2>
+    <form action="https://formspree.io/f/tonformid" method="POST">
         <label for="name">Nom complet :</label>
         <input type="text" id="name" name="name" required>
 
@@ -29,7 +113,7 @@
         <label for="phone">Téléphone :</label>
         <input type="tel" id="phone" name="phone" required>
 
-        <label for="course">Formation :</label>
+        <label for="course">Choix du module :</label>
         <select id="course" name="course">
           <option value="maintenance">Maintenance Informatique</option>
           <option value="froid">Froid et Climatisation</option>
@@ -37,18 +121,19 @@
         </select>
 
         <button type="submit">S’inscrire</button>
-      </form>
-    </section>
+    </form>
 
-    <section id="contact-whatsapp">
-      <a href="https://wa.me/237675837710?text=Je%20veux%20m'inscrire%20à%20une%20formation" target="_blank">
-        <button>Contact WhatsApp</button>
-      </a>
-    </section>
-  </main>
+    <div style="text-align:center; margin-top:20px;">
+        <a href="https://wa.me/237675837710?text=Je%20veux%20m'inscrire%20à%20une%20formation" target="_blank">
+            <button>Contact WhatsApp</button>
+        </a>
+    </div>
+</section>
 
-  <footer>
+</main>
+
+<footer>
     <p>&copy; 2026 SMART IT Solutions. Tous droits réservés.</p>
-  </footer>
+</footer>
 </body>
 </html>
