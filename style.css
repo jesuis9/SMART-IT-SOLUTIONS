@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background: #4b0082; /* violet */
+  background: #4b0082;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -18,13 +18,9 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+nav a:hover { text-decoration: underline; }
 
-main {
-  padding: 20px;
-}
+main { padding: 20px; }
 
 section.hero {
   background: #e6e6fa;
@@ -40,7 +36,7 @@ section.services {
   margin: 30px 0;
 }
 
-section.services button, #formulaire button, #contact-whatsapp button {
+section.services button, button {
   padding: 15px 25px;
   background: #4b0082;
   color: white;
@@ -50,7 +46,7 @@ section.services button, #formulaire button, #contact-whatsapp button {
   font-size: 16px;
 }
 
-section.services button:hover, #formulaire button:hover, #contact-whatsapp button:hover {
+section.services button:hover, button:hover {
   background: #6a0dad;
 }
 
@@ -62,7 +58,7 @@ form {
   gap: 15px;
 }
 
-input, select {
+input, select, textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -77,7 +73,5 @@ footer {
 }
 
 @media (min-width: 768px) {
-  section.services {
-    flex-direction: row;
-  }
+  section.services { flex-direction: row; }
 }
