@@ -75,3 +75,21 @@ footer {
 @media (min-width: 768px) {
   section.services { flex-direction: row; }
 }
+
+.formation-section {
+  margin-bottom: 40px;
+}
+
+.formation-section h2,
+.formation-section h3 {
+  color: #0a3d62;
+}
+
+.docs-list li {
+  margin: 8px 0;
+}
+
+details {
+  margin: 10px 0;
+  cursor: pointer;
+}
